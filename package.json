@@ -4,8 +4,8 @@
   "description": "Starter kit for authoring a Webprovisions plugin.",
   "main": "dist/index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "build-dev": "webpack --mode development"
+    "build": ".\\node_modules\\.bin\\webpack --mode production",
+    "build-dev": ".\\node_modules\\.bin\\webpack --mode development"
   },
   "dependencies": {
     "@webprovisions/platform": "^1.0.0-alpha.8",

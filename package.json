@@ -8,7 +8,8 @@
     "build-dev": "webpack --mode development"
   },
   "dependencies": {
-    "@webprovisions/platform": "1.0.0-alpha.6"
+    "@webprovisions/platform": "^1.0.0-alpha.8",
+    "babel-regenerator-runtime": "^6.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.40",

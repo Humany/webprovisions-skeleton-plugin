@@ -1,5 +1,8 @@
 module.exports = {
-  entry: __dirname + '/src/index.js',
+  entry: [
+    __dirname + '/src/polyfills.js',
+    __dirname + '/src/index.js',
+  ],
   output: {
     filename: 'skeleton-plugin.js',
     path: __dirname + '/dist'
@@ -13,7 +16,7 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: [
-              ['@babel/preset-env', { 'modules': false }]
+              ['@babel/preset-env', { modules: false }]
             ]
           }
         }

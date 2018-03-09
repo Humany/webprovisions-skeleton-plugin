@@ -4,7 +4,7 @@
   "description": "Starter kit for authoring a Webprovisions plugin.",
   "main": "dist/index.js",
   "scripts": {
-    "start-dev": "yarn build-dev && node ./src/server/server.js",
+    "start-dev": "npm build-dev && node ./src/server/server.js",
     "build": ".\\node_modules\\.bin\\webpack --mode production",
     "build-dev": ".\\node_modules\\.bin\\webpack --mode development"
   },

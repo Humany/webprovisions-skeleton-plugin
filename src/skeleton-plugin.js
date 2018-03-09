@@ -8,11 +8,14 @@ export default class SkeletonPlugin extends Plugin {
   initialize() {
     console.log(
       `Hello world - I'm a plugin and I've just been initialized for the "${this.widget.name}" widget.
-From here, I can speak to the widget through the controller (this.controller)
-as well as accessing any registered services through the container (this.container).`,
+      From here, I can speak to the widget through the controller (this.controller)
+      as well as accessing any registered services through the container (this.container).`,
       this.controller,
       this.container,
     );
+
+    // Invoke an action on the widget
+    this.controller.invoke('start', { phrase: 'Hello, I am a plugin!' });
   }
 
   // destroy() { }

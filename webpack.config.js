@@ -1,3 +1,5 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   entry: [
     __dirname + '/src/polyfills.js',
@@ -7,6 +9,11 @@ module.exports = {
     filename: 'skeleton-plugin.js',
     path: __dirname + '/dist'
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: __dirname + '/public/index.html',
+    }),
+  ],
   module: {
     rules: [
       {

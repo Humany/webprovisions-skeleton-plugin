@@ -26,9 +26,7 @@ npm run build-dev
 npm run start-dev
 ```
 
-This will launch a simple server running on port 3000 by default.
-
-6. Navigate to http://localhost:3000
+This will launch your browser and redirect you to a simple server where you can see your plugin in action.
 
 
 ## Registering the plugin

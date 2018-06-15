@@ -1,21 +1,20 @@
 import { Plugin } from '@webprovisions/platform';
 
 export default class SkeletonPlugin extends Plugin {
-  // constructor(container) {
-  //   super(container);
-  // }
+  constructor(container, settings) {
+    super(container, settings);
+    container.register('greeting', 'Hello, I am a plugin!');
+  }
 
   initialize() {
     console.log(
       `Hello world - I'm a plugin and I've just been initialized for the "${this.widget.name}" widget.
-      From here, I can speak to the widget through the controller (this.controller)
-      as well as accessing any registered services through the container (this.container).`,
-      this.controller,
-      this.container,
+From here, I can invoke commands on the widget as well as accessing any registered
+values or services through the container.`,
     );
 
     // Invoke an action on the widget
-    this.controller.invoke('start', { phrase: 'Hello, I am a plugin!' });
+    this.widget.invoke('start', { phrase: this.container.get('greeting') });
   }
 
   // destroy() { }

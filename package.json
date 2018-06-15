@@ -9,7 +9,7 @@
     "build-dev": ".\\node_modules\\.bin\\webpack --mode development"
   },
   "dependencies": {
-    "@webprovisions/platform": "^1.0.0-alpha.9",
+    "@webprovisions/platform": "^1.0.0-alpha.16",
     "babel-regenerator-runtime": "^6.5.0",
     "express": "^4.16.2"
   },

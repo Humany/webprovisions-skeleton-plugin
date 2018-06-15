@@ -439,9 +439,9 @@
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
 
-"@webprovisions/platform@^1.0.0-alpha.8":
-  version "1.0.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/@webprovisions/platform/-/platform-1.0.0-alpha.8.tgz#6f582f285a474246fe9a15acacf151f1d04f9e50"
+"@webprovisions/platform@^1.0.0-alpha.16":
+  version "1.0.0-alpha.16"
+  resolved "https://registry.yarnpkg.com/@webprovisions/platform/-/platform-1.0.0-alpha.16.tgz#4116af0325ce21584180681b9766dd09693b16ce"
 
 abbrev@1:
   version "1.1.1"

@@ -1,11 +1,9 @@
 const express = require('express');
 const path = require('path');
 const opn = require('opn');
+const openport = require('openport');
 
 const app = express();
-
-// Port to listen on
-const port = process.env.PORT || 3000;
 
 // Serve static files
 app.use(express.static(path.resolve('dist')));
@@ -16,12 +14,20 @@ app.get('/', (req, res) => {
     res.sendFile(path.resolve('dist/index.html'));
 });
 
-// Serve app
-app.listen(port, () => {
+openport.find(
+    {
+        startingPort: 3000,
+        endingPort: 3100,
+    },
+    function (err, port) {
 
-    console.log(`App listening on port ${port}`);
+        // Serve app
+        app.listen(port, () => {
 
-    // Open browser
-    opn(`http://localhost:${port}`);
-});
+            console.log(`App listening on port ${port}`);
 
+            // Open browser
+            opn(`http://localhost:${port}`);
+        });
+
+    });

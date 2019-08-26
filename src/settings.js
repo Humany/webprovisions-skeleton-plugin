@@ -1,4 +1,4 @@
 export default {
-  implementationName: 'webprovisions',
-  widgetName: 'plugin-bot',
+  implementationName: 'skeleton-plugin',
+  widgetName: 'skeleton-plugin-bot',
 };

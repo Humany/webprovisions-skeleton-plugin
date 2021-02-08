@@ -23,7 +23,7 @@ npm run build-dev
 ```
 5. To watch the plugin in action
 ```
-npm run start-dev
+npm run start
 ```
 
 This will launch your browser and redirect you to a simple server where you can see your plugin in action.
